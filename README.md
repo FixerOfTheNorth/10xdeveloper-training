@@ -1,6 +1,6 @@
 # 10xdeveloper-training
 
-This is an example training repository used in the 10x Deverloper training.
+This is an example Next.js application used in the 10x Developer training.
 
 ## Getting started
 
