@@ -64,7 +64,7 @@ export function ButtonBase({
   return (
     <Button
       className={clsx(
-        "rounded-full flex items-center gap-2 px-4 py-2 font-semibold",
+        "rounded-full flex items-center gap-2 px-4 py-2 font-semibold cursor-pointer",
         color === "primary" && "bg-black text-white border-black",
         color === "secondary" && "bg-white text-black border border-gray-200",
         variant === "outlined" && "border-2 border-dashed",
