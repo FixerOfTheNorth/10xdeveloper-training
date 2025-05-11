@@ -1,0 +1,12 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Purpose
+- This is an example dashboard project for training purposes
+
+# Tech stack
+- Next.js
+- Shadcn
+

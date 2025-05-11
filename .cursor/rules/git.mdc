@@ -1,0 +1,13 @@
+---
+description: git tasks
+globs: 
+alwaysApply: false
+---
+# Git
+- Use feature branches for new features
+- Use pull requests for code reviews
+- Use issues for bug reports and feature requests
+
+# Commits
+- MUST use conventional commits
+- Use imperative tense for commit messages

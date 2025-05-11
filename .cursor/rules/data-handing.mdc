@@ -1,0 +1,14 @@
+---
+description: 
+globs: app/**/*,components/**/*
+alwaysApply: false
+---
+# Data handling
+- All data handling should use fetch and use hooks to keep thing simple
+
+# Data fetching
+- All data fetching should have refresh functionality as well that can be called when posting data
+
+# Data posting
+- When any data has been posted to the internal API, any fetched data should be refreshed
+

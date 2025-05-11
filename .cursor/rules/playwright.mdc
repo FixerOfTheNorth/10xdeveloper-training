@@ -1,0 +1,7 @@
+---
+description: Playwright rules
+globs: playwright/**/*
+alwaysApply: false
+---
+# Playwright
+- Must ALWAYS use custom fixtures (with roles etc.) instead of default Playwright fixtures

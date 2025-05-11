@@ -1,0 +1,13 @@
+---
+description: Authentication, supabase auth
+globs: 
+alwaysApply: false
+---
+# Auth
+- MUST use supabase auth
+- MUST have separate abstraction files from callsites for auth
+- MUST use JWT for authentication
+- MUST NOT have password authentication.
+- MUST use Google as auth provider
+- ALWAYS use `supabase.auth.getUser()` to protect pages and user data.
+- NEVER trust `supabase.auth.getSession()` inside server code such as middleware. It isn't guaranteed to revalidate the Auth token.

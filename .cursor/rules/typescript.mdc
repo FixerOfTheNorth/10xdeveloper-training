@@ -1,0 +1,28 @@
+---
+description: Typescript rules
+globs: *.ts, *.tsx
+alwaysApply: false
+---
+# Typescript
+- NEVER use `any` type
+- ALWAYS write separate typings for complex parameters, which should always be documented with full code blocks for type and every property (with empty line separating properties)
+- When documenting types etc. always document every property separately with block comment instead of one block comment for the whole type
+- Prefer using `satisfies` over `as` for type casting as it is more type safe
+- Every function MUST be documented
+
+# Example commenting 
+
+/**
+ * <Description and use for the interface>
+ */
+export interface CustomInsightAnswer {
+  /**
+   * <Description of the property with example>
+   */
+  property1: string;
+
+  /**
+   * <Description of the property with example>
+   */
+  property2: string;
+}

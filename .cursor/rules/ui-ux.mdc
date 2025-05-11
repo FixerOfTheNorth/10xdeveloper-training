@@ -1,0 +1,45 @@
+---
+description: When working with UI, UX, shadcn, icons, shadcn-ui
+globs: *.tsx, *.css,app/**/*,components/**/*
+alwaysApply: false
+---
+# UI/UX
+- The UI component library is shadcn
+- YOU MUST use `shadcn` instead of `shadcn-ui`
+- You can access Shadcn documentation through @shadcn
+- All UI implementations should work on mobile, tablet, and desktop. Each size can have different styling and components.
+- The styling should be done with Tailwind CSS
+- All alerts and errors should use Alert component
+- Every component should be user friendly, including instructions and error messages
+- Every component should have aesthetically pleasing design
+- Every component should follow material design guidelines
+- The UX should be intuitive and easy to use
+- The UX should delight and surprise the user
+- The UX color scheme should be black and white/gradient with dash of color
+- Plan limitations should be displayed only when the user has reached the limit of the current plan
+- All UI components MUST have separate reusable base components for unified styling and functionality with at least color and variant parameters
+- When referring to environment variables, you MUST validate that the variable is defined in the .env file
+- Do not change anything in the layout unless asked specifically to do so. You can add new features but do not change existing ones.
+
+# Design
+- The UI MUST have clear visual hierarchy
+- Must ALWAYS use the common `spinner` component for loading state
+
+# Shadcn
+- You are NOT allowed to generate/create the files yourself
+- Add new shadcn components with `npx shadcn add` command
+- YOU MUST use `shadcn` instead of `shadcn-ui`
+- Must install the components and NEVER create them yourself
+- The components in `components/ui` MUST NOT be directly edited or new ones created, these are only created through `shadcn`
+
+# Components
+- MUST create separate component for every shadcn component which sets default colors etc. for consistent UI across components
+
+# Buttons
+- Every button should use "pointer" cursor
+- Every button MUST have a icon. On the left if it is a action such as save, on the right if it is a navigation button
+- All buttons MUST follow the current design system
+- Buttons MUST be fully rounded
+- They MUST use either primary or secondary color from the color palette (black, white)
+- IF a button uses secondary (white) color, it MUST have a light grey border
+- IF a button only has an icon, it MUST be a circle

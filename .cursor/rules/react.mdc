@@ -1,0 +1,25 @@
+---
+description: React
+globs: *.tsx
+alwaysApply: false
+---
+# React
+- Always use functional React
+- Always use React hooks
+- ALWAYS use contexts when the hook data becomes something that multiple components need to access
+- Never use default export for components, always use named exports
+- Always export fallback component if the component has data loading or hooks, which uses only Skeleton components
+- You MUST use `lucide-react` for icons
+- MUST use already existing hooks for data operations
+- Every component MUST take `className` and `data-testid` props
+
+# useEffect
+- DO NOT use useEffect for hacking functionality that should exist somewhere else. THIS IS FRAGILE CODE!
+
+## React hooks
+- Always use hooks for data operations
+- Hooks MUST NEVER connect to the database directly
+- Hooks MUST ALWAYS use API endpoints for data processing
+
+# Loading state
+- Use common Spinner component for loading states

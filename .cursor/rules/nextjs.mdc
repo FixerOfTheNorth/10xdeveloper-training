@@ -1,0 +1,20 @@
+---
+description: General rules for frontend, backend when built with Next.js
+globs: 
+alwaysApply: false
+---
+# Next.js
+- Do not use 'next/router' for routing, use 'next/navigation' instead
+- Prefer 'next/link' over routing
+- Link components from `next/link` should not contain anchor elements
+- Prefer 'next/image' for images
+- Path params should follow:
+  - Use kebab-case for dynamic segments (e.g., [product-id])
+  - Use descriptive names for dynamic segments
+  - Avoid using query parameters for essential data
+  - Keep URLs as short and meaningful as possible
+- Query params should follow:
+  - Use snake_case for query parameters
+  - Use descriptive names for query parameters
+  - Avoid using query parameters for essential data
+  - Keep URLs as short and meaningful as possible

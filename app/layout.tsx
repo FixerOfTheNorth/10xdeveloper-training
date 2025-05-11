@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import { ButtonBase } from "../components/ButtonBase";
+import { ChevronRight } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +30,16 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header className="w-full flex items-center justify-between p-4 border-b border-gray-200">
+          <div className="font-bold text-lg">10x Developer Training</div>
+          <nav>
+            <Link href="/dashboard" passHref>
+              <ButtonBase rightIcon={<ChevronRight size={18} />} color="primary" variant="default" data-testid="nav-dashboard">
+                Dashboard
+              </ButtonBase>
+            </Link>
+          </nav>
+        </header>
         {children}
       </body>
     </html>

@@ -1,0 +1,10 @@
+---
+description: API work
+globs: api/**/*
+alwaysApply: false
+---
+# API endpoints
+- API should follow the RESTful CRUD API design (GET, POST, PUT, DELETE methods per action) (e.g. POST `/users/<userID>`)
+- Every API endpoint must always export the RequestBody and ResponseBody types (Get, Put, Post, Delete)
+- API endpoints that require authentication MUST get the user data from the JWT token
+- API endpoints should only handle data and the detailed functionality should be located in the `lib` folder

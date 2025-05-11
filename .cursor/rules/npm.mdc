@@ -1,0 +1,7 @@
+---
+description: when installing with npm
+globs: 
+alwaysApply: false
+---
+# Npm
+- Use npm instead of pnpm etc.
